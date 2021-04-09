@@ -102,8 +102,8 @@ import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
 // import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
 import ComponentRenderer from "ComponentRenderer.js";
-import MainLandingPage from "MainLandingPage.js";
-
+// import MainLandingPage from "MainLandingPage.js";
+import Map from "./components/mapbox/map";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function App() {
@@ -111,8 +111,8 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/components/:type/:subtype/:name">
-          <ComponentRenderer />
+        <Route path="/mapa">
+          <Map />
         </Route>
         <Route path="/components/:type/:name">
           <ComponentRenderer />
@@ -120,6 +120,7 @@ export default function App() {
         <Route path="/">
           <SaaSProductLandingPage />
         </Route>
+        {/*<Route path="/mapa" exact component={Map} />*/}
       </Switch>
     </Router>
   );
