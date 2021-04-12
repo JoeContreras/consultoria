@@ -89,10 +89,10 @@ export default ({
       <NavLink href="/mapa">Ubicacion</NavLink>
       <NavLink href="/#">Precios</NavLink>
       <NavLink href="/#">Contactanos</NavLink>
-      <NavLink href="/#" tw="lg:ml-12!">
+      <NavLink href="/auth" tw="lg:ml-12!">
         Login
       </NavLink>
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="/#">
+      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="/auth">
         Registrate
       </PrimaryLink>
     </NavLinks>,

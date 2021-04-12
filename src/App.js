@@ -105,6 +105,7 @@ import ComponentRenderer from "ComponentRenderer.js";
 // import MainLandingPage from "MainLandingPage.js";
 import Map from "./components/mapbox/map";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Auth from "./components/Auth/Auth";
 
 export default function App() {
   // return <AnimationRevealPage disabled></AnimationRevealPage>;
@@ -114,8 +115,8 @@ export default function App() {
         <Route path="/mapa">
           <Map />
         </Route>
-        <Route path="/components/:type/:name">
-          <ComponentRenderer />
+        <Route path="/auth">
+          <Auth />
         </Route>
         <Route path="/">
           <SaaSProductLandingPage />

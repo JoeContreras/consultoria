@@ -42,16 +42,16 @@ export default () => {
         ></script>
       </Helmet>
       <MainFeature
-        subheading={<Subheading>Quality Work</Subheading>}
+        subheading={<Subheading>Trabajo de calidad</Subheading>}
         imageSrc={heroScreenshotImageSrc}
         imageBorder={true}
         imageDecoratorBlob={true}
       />
       <FeatureWithSteps
-        subheading={<Subheading>STEPS</Subheading>}
+        subheading={<Subheading>PASOS</Subheading>}
         heading={
           <>
-            Easy to <HighlightedText>Get Started.</HighlightedText>
+            Facil de <HighlightedText>Comenzar.</HighlightedText>
           </>
         }
         textOnLeft={false}

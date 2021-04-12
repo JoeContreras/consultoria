@@ -53,24 +53,29 @@ export default ({ roundedHeaderButton }) => {
         <TwoColumn>
           <LeftColumn>
             <Heading>
-              Beautiful React Templates <span tw="text-primary-500">for you.</span>
+              Descubre cómo la tecnología puede
+              <span tw="text-primary-500"> transformar tu negocio.</span>
             </Heading>
             <Paragraph>
-              Our templates are easy to setup, understand and customize. Fully modular components with a variety of
-              pages and components.
+              Diseñamos soluciones específicas alineadas a la optimización de
+              los procesos y las estrategias de la organización.
             </Paragraph>
             <Actions>
               <input type="text" placeholder="Your E-mail Address" />
-              <button>Get Started</button>
+              <button>Comienza</button>
             </Actions>
             <CustomersLogoStrip>
-              <p>Our TRUSTED Customers</p>
+              <p>Nuestros clientes mas confiables</p>
               <img src={CustomersLogoStripImage} alt="Our Customers" />
             </CustomersLogoStrip>
           </LeftColumn>
           <RightColumn>
             <IllustrationContainer>
-              <img tw="min-w-0 w-full max-w-lg xl:max-w-3xl" src={DesignIllustration} alt="Design Illustration" />
+              <img
+                tw="min-w-0 w-full max-w-lg xl:max-w-3xl"
+                src={DesignIllustration}
+                alt="Design Illustration"
+              />
             </IllustrationContainer>
           </RightColumn>
         </TwoColumn>
