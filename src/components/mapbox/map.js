@@ -1,13 +1,15 @@
 import React, { useRef, useEffect, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "./Map.css";
-import tw from "twin.macro";
-import styled from "styled-components";
+// import tw from "twin.macro";
+// import styled from "styled-components";
 
+/*
 const Container = tw.div`relative`;
 const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-20 md:py-24`}
 `;
+*/
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA";
@@ -37,7 +39,7 @@ const Map = () => {
       setZoom(map.getZoom().toFixed(2));
     });
 
-    const marker = new mapboxgl.Marker({
+    new mapboxgl.Marker({
       color: "red",
       draggable: true,
     })
