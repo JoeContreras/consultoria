@@ -1,5 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
-import mapboxgl from "mapbox-gl";
+// import mapboxgl from "mapbox-gl";
+import mapboxgl from "mapbox-gl/dist/mapbox-gl-csp";
+import MapboxWorker from "worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker";
 import "./Map.css";
 // import tw from "twin.macro";
 // import styled from "styled-components";
@@ -21,6 +23,7 @@ const Map = () => {
   const [lat, setLat] = useState(24.0277);
   const [zoom, setZoom] = useState(15);
 
+  mapboxgl.workerClass = MapboxWorker;
   // Initialize map when component mounts
   useEffect(() => {
     const map = new mapboxgl.Map({

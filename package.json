@@ -26,7 +26,8 @@
     "styled-components": "^5.0.1",
     "tailwindcss": "^1.2.0",
     "twin.macro": "^1.0.0-alpha.7",
-    "use-in-view": "^1.0.15"
+    "use-in-view": "^1.0.15",
+    "worker-loader": "^3.0.8"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -39,7 +40,12 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%", "not dead", "not ie 11", "not chrome < 51", "not safari < 10", "not op_mini all"
+      ">0.2%",
+      "not dead",
+      "not ie 11",
+      "not chrome < 51",
+      "not safari < 10",
+      "not op_mini all"
     ],
     "development": [
       "last 1 chrome version",
